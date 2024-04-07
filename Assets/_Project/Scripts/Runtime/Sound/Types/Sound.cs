@@ -1,7 +1,7 @@
-using Sound.Enums;
 using UnityEngine;
+using VRConcepts.Runtime.Sound.Enums;
 
-namespace Sound.Types
+namespace VRConcepts.Runtime.Sound.Types
 {
     [System.Serializable]
     public class Sound

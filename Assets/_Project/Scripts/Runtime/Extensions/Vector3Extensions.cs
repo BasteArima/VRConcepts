@@ -1,17 +1,19 @@
 ﻿using UnityEngine;
 
-public static class Vector3Extensions
+namespace VRConcepts.Runtime.Extensions
 {
-    public static Vector3 GetRandomShift(this Vector3 vector3, float offset)
+    public static class Vector3Extensions
     {
-        float xOffset = Random.value * offset * 2 - offset;
-        float yOffset = Random.value * offset * 2 - offset;
-        return new Vector3()
+        public static Vector3 GetRandomShift(this Vector3 vector3, float offset)
         {
-            x = vector3.x + xOffset,
-            y = vector3.y + yOffset,
-            z = vector3.z
-        };
+            float xOffset = Random.value * offset * 2 - offset;
+            float yOffset = Random.value * offset * 2 - offset;
+            return new Vector3()
+            {
+                x = vector3.x + xOffset,
+                y = vector3.y + yOffset,
+                z = vector3.z
+            };
+        }
     }
 }
-

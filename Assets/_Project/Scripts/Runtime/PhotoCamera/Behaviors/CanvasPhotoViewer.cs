@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
+using VRConcepts.Runtime.PhotoCamera.Services;
 
-namespace PhotoCamera.Behaviors
+namespace VRConcepts.Runtime.PhotoCamera.Behaviors
 {
     public class CanvasPhotoViewer : MonoBehaviour
     {
@@ -33,7 +34,7 @@ namespace PhotoCamera.Behaviors
 
         private void Start()
         {
-            var photosFolderPath = Path.Combine(Application.persistentDataPath, GameConstants.PHOTO_PHOLDERS_NAME);
+            var photosFolderPath = Path.Combine(Application.persistentDataPath, RuntimeConstants.Configs.PHOTO_PHOLDERS_NAME);
             LoadAllPhotos(photosFolderPath);
         }
 

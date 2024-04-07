@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Sound.Enums;
 using UnityEngine;
+using VRConcepts.Runtime.Sound.Enums;
 using Random = UnityEngine.Random;
 
-namespace Sound.Behaviors
+namespace VRConcepts.Runtime.Sound.Behaviors
 {
     public class SoundDesigner : MonoBehaviour
     {

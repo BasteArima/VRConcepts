@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace PhotoCamera.Behaviors
+namespace VRConcepts.Runtime.PhotoCamera.Behaviors
 {
     public class ScreenshotCapturer : MonoBehaviour
     {
@@ -12,7 +12,7 @@ namespace PhotoCamera.Behaviors
 
         private void Awake()
         {
-            Directory.CreateDirectory($"{Application.persistentDataPath}/{GameConstants.PHOTO_PHOLDERS_NAME}");
+            Directory.CreateDirectory($"{Application.persistentDataPath}/{RuntimeConstants.Configs.PHOTO_PHOLDERS_NAME}");
         }
 
         public void CaptureScreenshot()
@@ -29,7 +29,7 @@ namespace PhotoCamera.Behaviors
 
             byte[] bytes = screenshot.EncodeToPNG();
 
-            string filePath = $"{Application.persistentDataPath}/{GameConstants.PHOTO_PHOLDERS_NAME}/screenshot {System.DateTime.Now:MM-dd-yy (HH-mm-ss)}.png";
+            string filePath = $"{Application.persistentDataPath}/{RuntimeConstants.Configs.PHOTO_PHOLDERS_NAME}/screenshot {System.DateTime.Now:MM-dd-yy (HH-mm-ss)}.png";
             LastScreenshotPath = filePath;
             File.WriteAllBytes(filePath, bytes);
 

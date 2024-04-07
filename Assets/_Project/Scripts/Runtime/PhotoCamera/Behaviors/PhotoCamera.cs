@@ -1,8 +1,9 @@
 using System.Collections;
 using NaughtyAttributes;
 using UnityEngine;
+using VRConcepts.Runtime.PhotoCamera.Services;
 
-namespace PhotoCamera.Behaviors
+namespace VRConcepts.Runtime.PhotoCamera.Behaviors
 {
     public class PhotoCamera : MonoBehaviour
     {

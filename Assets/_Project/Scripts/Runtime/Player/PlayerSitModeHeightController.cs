@@ -1,13 +1,18 @@
 using Autohand;
 using UnityEngine;
+using VRConcepts.Runtime.Utilities;
 
-public class PlayerSitModeHeightController : MonoBehaviour
+namespace VRConcepts.Runtime.Player
 {
-    [SerializeField] private AutoHandPlayer _autoHandPlayer;
-    [SerializeField] private float _sittingHeightOffset;
-    
-    private void Start()
+    public class PlayerSitModeHeightController : MonoBehaviour
     {
-        _autoHandPlayer.heightOffset = BuildSettings.Instance.PlayerSittingMode ? _sittingHeightOffset : 0;
+        [SerializeField] private AutoHandPlayer _autoHandPlayer;
+        [SerializeField] private float _sittingHeightOffset;
+    
+        private void Start()
+        {
+            _autoHandPlayer.heightOffset = BuildSettings.Instance.PlayerSittingMode ? _sittingHeightOffset : 0;
+        }
     }
+
 }

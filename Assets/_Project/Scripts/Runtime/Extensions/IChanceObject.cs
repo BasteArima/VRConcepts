@@ -1,4 +1,7 @@
-public interface IChanceObject
+namespace VRConcepts.Runtime.Extensions
 {
-    public float Chance { get; }
+    public interface IChanceObject
+    {
+        public float Chance { get; }
+    }
 }

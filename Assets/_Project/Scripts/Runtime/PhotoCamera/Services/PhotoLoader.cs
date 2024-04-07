@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PhotoCamera.Behaviors
+namespace VRConcepts.Runtime.PhotoCamera.Services
 {
     public class PhotoLoader
     {

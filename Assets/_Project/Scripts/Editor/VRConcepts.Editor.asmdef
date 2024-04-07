@@ -1,0 +1,18 @@
+{
+    "name": "VRConcepts.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:854ca05ddd98d7b49bc5f179ba863f55"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
