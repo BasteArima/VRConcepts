@@ -48,7 +48,7 @@ namespace PhotoCamera.Behaviors
         private void LoadAllPhotos(string folderPath)
         {
             string[] fileNames = Directory.GetFiles(folderPath);
-            foreach (string filePath in fileNames)
+            foreach (var filePath in fileNames)
             {
                 if (Path.GetExtension(filePath).Equals(".png", StringComparison.OrdinalIgnoreCase))
                     AddPhoto(filePath);

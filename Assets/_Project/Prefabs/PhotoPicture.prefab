@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2467071723546903333}
   - component: {fileID: 3009202278853925524}
   m_Layer: 0
-  m_Name: PhotoPicture (1)
+  m_Name: WhiteBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
